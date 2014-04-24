@@ -240,6 +240,24 @@ border-width:5px; border-color:white; box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5
             <button class="btn">Tulosta <i class="icon-print"></i></button>
             <button class="btn">Muokkaa <i class="icon-pencil"></i></button>
             </div>
+            
+            <div>
+            <h5>Tekstittömiä painikkeita</h5>
+            <button class="btn"><i class="icon-question-sign"></i></button>    
+            <button class="btn"><i class="icon-calendar"></i></button>
+            <button class="btn"><i class="icon-remove"></i></button>
+            <button class="btn"><i class="icon-plus"></i></button>
+            <button class="btn"><i class="icon-list"></i></button>
+            <button class="btn"><i class="icon-plus"></i></button>    
+            </div>
+            <div>
+            <h5>Tekstillisiä painikkeita</h5>
+            <button class="btn">Poista <i class="icon-remove"></i></button>
+            <button class="btn">Lisää <i class="icon-plus"></i></button>
+            <button class="btn">Tallenna <i class="icon-xxxxx"></i></button>    
+            <button class="btn btn-primary">Hae <i class="icon-search"></i></button>    
+            </div>
+            
             </p>
             
         </div>
@@ -489,8 +507,12 @@ i { padding-right:0.20em; }
         <p>Alertteja on käytössä kolme eri väriä, keltainen <code>.alert</code> vihreä <code>.alert-success</code> ja sininen <code>.alert-info</code>. Keltainen ilmoittaa virheestä, vihreä onnistuneesta toiminnosta, sininen on neutraali ilmoitus. Bootstrapin punataustaista alerttia ei käytetä Virkailijan käyttöliittymässä vaan se korvataan keltataustaisella. Ikonin näyttäminen alertin sisällä on suositeltavaa, mutta ei välttämätöntä esimerkiksi tilan säästämiseksi. Jos ikonia käytetään täytyy lisätä luokka <code>.alert-block</code>, joka kasvattaa paddingia alertin sisällä.</p>
         <h3>Alert ikonin kanssa</h3>
         <div class="alert alert-block"><img style="margin-right:10px;" src="img/alert-icon28x29.png">Alert Block</div>
+        <div class="alert alert-block"><img style="margin-right:10px;" src="img/alert-icon28x29.png"> Lomakkeen tiedoissa on virheitä tai puutteita. Ole hyvä ja tarkista lomakkeen tiedot: koulutuksen alkamiskausi.</div>
+        <div class="alert alert-block"><img style="margin-right:10px;" src="img/alert-icon28x29.png"> Henkilötunnus puuttuu tai on virheellinen. Syötä henkilötunnus muodossa ppkkvv-**** tai ppkkvvA****, jossa ppkkvv on syntymäaikasi ja **** henkilötunnuksen loppuosa</div>        
         <div class="alert alert-block alert-success"><img style="margin-right:10px;" src="img/confirm-icon28x29.png">Alert Block success</div>
+        <div class="alert alert-block alert-success"><img style="margin-right:10px;" src="img/confirm-icon28x29.png">Tiedot tallennettu onnistuneesti.</div>        
         <div class="alert alert-block alert-info"><img style="margin-right:10px;" src="img/info-icon28x29.png">Alert Block info</div>
+        <div class="alert alert-block alert-info"><img style="margin-right:10px;" src="img/info-icon28x29.png">Olet luomassa tutkintoon johtavaa koulutusta tyyppiä ammatillinen perustutkinto organisaatioon Stadin Ammattiopisto, Vilppulantien toimipaikka.</div>        
         <h3>Alert ilman ikonia</h3>
         <div class="alert">Alert</div>
         <div class="alert alert-success">Alert success</div>
@@ -507,6 +529,77 @@ i { padding-right:0.20em; }
         <div class="modal-body">Qui ipsorum lingua Celtae, nostra Galli appellantur. Quisque ut dolor gravida, placerat libero vel, euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Sed haec quis possit intrepidus aestimare tellus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</div>
         <div class="modal-footer"><button class="btn btn-secondary">Painike</button><button class="btn btn-primary">Painike</button></div>
     </div>
+<!-- esimerkki -->
+        <div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
+    <div class="modal-header"><h3>Luo uusi koulutus</h3></div>
+        <div class="modal-body">
+<h5>Valitse koulutus</h5>
+<select class="span10">
+            <option>Korkeakoulutus</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<div>
+<h5>Valitse koulutuksen toteutuspaikka:</h5>    
+<p><i class="icon-folder-open"></i>Aalto-korkeakoulusäätiö</p>     
+<p>&nbsp;&nbsp;&nbsp;<i class="icon-folder-open"></i>Aalto-yliopisto</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-file"></i>Aalto-yliopisto, insinööritieteiden korkeakoulu</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-file"></i>Aalto-yliopisto, Kauppakorkeakoulu</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-file"></i>Aalto-yliopisto, Kemian tekniikan korkeakoulu</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-file"></i>Aalto-yliopisto, Perustieteiden korkeakoulu</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-file"></i>Aalto-yliopisto, Sähkötekniikan korkeakoulu</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-file"></i><strong>Aalto-yliopisto, Taiteiden ja suunnittelun korkeakoulu</strong></p>                
+</div>
+<div>
+<p>Koulutus luodaan seuraaviin organisaatioihin:</p>
+<p><i class="icon-remove"></i> Aalto-yliopisto, Taiteiden ja suunnittelun korkeakoulu</p>    
+
+            </div>            
+            </div>
+        <div class="modal-footer"><button class="btn btn-secondary">Peruuta</button><button class="btn btn-secondary" disabled>Liitä toiseen organisaatioon</button><button class="btn btn-primary">Jatka</button></div>
+    </div>        
+<!-- toinen esimerkki -->
+        <div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
+    <div class="modal-header"><h3>Luo uusi hakukohde</h3></div>
+        <div class="modal-body">
+<div>
+            <p>Olet luomassa uutta hakukohdetta seuraavista koulutuksista:</p>
+</div>    
+<div>    
+<label class="checkbox">
+      <input type="checkbox"> Mielenterveys- ja päihdetyön koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Sairaanhoidon ja huolenpidon koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Vanhustyön koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Ensihoidon koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Vammaistyön koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Suun terveydenhoidon koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Kuntoutuksen koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Asiakaspalvelun ja tietohallinnan koulutusohjelma, lähihoitaja 
+</label>
+<label class="checkbox">
+      <input type="checkbox"> Lasten ja nuorten hoidon ja kasvatuksen koulutusohjelma, lähihoitaja 
+</label>    
+            </div>            
+            </div>
+        <div class="modal-footer"><button class="btn btn-secondary">Peruuta</button><button class="btn btn-primary">Jatka</button></div>
+    </div>        
+        
     </div>
 </div> 					<!-- END ROW -->    
 
